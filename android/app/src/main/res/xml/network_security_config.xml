@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <!-- HTTP 허용 (HTTPS 미지원 CouchDB 환경 대응) -->
+    <!-- 보안 경고: 프로덕션 환경에서는 HTTPS 사용을 강력히 권장합니다 -->
+    <base-config cleartextTrafficPermitted="true">
+        <trust-anchors>
+            <certificates src="system" />
+        </trust-anchors>
+    </base-config>
+</network-security-config>
